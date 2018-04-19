@@ -12,11 +12,23 @@ namespace FizzBuzzTest
         {
             Console.WriteLine(message);
         }
+
+        public void WriteAll(List<string> messages)
+        {
+            foreach (var message in messages)
+            {
+                Console.WriteLine(message);
+            }
+        }
+
         public bool Repeat()
         {
             Write("Would you like to go again? Y:N");
 
             ConsoleKeyInfo keyPressed;
+
+            keyPressed = Console.ReadKey();
+
             do
             {
                 keyPressed = Console.ReadKey(true);
@@ -24,6 +36,11 @@ namespace FizzBuzzTest
 
             
             return keyPressed.Key == ConsoleKey.Y;
+        }
+
+        public int GetInt()
+        {
+            return Convert.ToInt32(Console.ReadLine());
         }
     }
 }

@@ -19,9 +19,10 @@ namespace FizzBuzzTest
             do
             {
                 Io.Write("what is your number");
-                int userInput = Convert.ToInt32(Console.ReadLine());
-                Io.Write(service.FindNumberOutput(userInput));
+                int userInput = Io.GetInt();
+                Io.WriteAll(service.WorkUpTo(userInput));
                 cont = Io.Repeat();
+
             } while (cont);
 
         }

@@ -27,5 +27,16 @@ namespace FizzBuzzTest
                 return num.ToString();
             }
         }
+        public List<string> WorkUpTo(int NumTo)
+        {
+            List<string> numbers = new List<string>();
+
+            for (int i = 0; i <= NumTo; i++)
+            {
+                numbers.Add(FindNumberOutput(i));
+            }
+
+            return numbers;
+        }
     }
 }
