@@ -27,8 +27,6 @@ namespace FizzBuzzTest
 
             ConsoleKeyInfo keyPressed;
 
-            keyPressed = Console.ReadKey();
-
             do
             {
                 keyPressed = Console.ReadKey(true);
