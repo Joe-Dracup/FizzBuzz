@@ -10,7 +10,6 @@ namespace FizzBuzzTest
     {
         static void Main(string[] args)
         {
-
             Services service = new Services();
             FizzBuzzIO Io = new FizzBuzzIO();
 
@@ -24,7 +23,6 @@ namespace FizzBuzzTest
                 cont = Io.Repeat();
 
             } while (cont);
-
         }
     }
 }
